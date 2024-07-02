@@ -23,20 +23,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 if ($ADMIN->fulltree) {
+
     $settings = new theme_boost_admin_settingspage_tabs('themesettingboostchild',
         get_string('configtitle', 'theme_boostchild'));
 
-    $page = new admin_settingpage('theme_boostchild_general',
-        get_string('generalsettings', 'theme_boostchild'));
-
-    $page = new admin_settingpage('theme_boostchild_general',
-        'Branding');
+    $page = new admin_settingpage('theme_boostchild_funcionalidades',
+        'Funcionalidades');
 
     $page->add(
         new admin_setting_heading(
-            'theme_boostchild_brand',
-                'Colores',
-            'Seleccione los colores del tema')
+            'theme_boostchild_comportamiento',
+            'Comportamiento',
+            'Configure los compartamientos del tema')
     );
 
     $name = 'theme_boostchild/extendscontent';
@@ -45,6 +43,17 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_configcheckbox($name, $title, $description, false);
     $page->add($setting);
 
+    $settings->add($page);
+
+    $page = new admin_settingpage('theme_boostchild_branding',
+        'Branding');
+
+    $page->add(
+        new admin_setting_heading(
+            'theme_boostchild_colores',
+                'Colores',
+            'Seleccione los colores del tema')
+    );
 
     $name = 'theme_boostchild/primarycolor';
     $title = 'Color primario';
@@ -53,7 +62,33 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
+    $name = 'theme_boostchild/navbarcolor';
+    $title = 'Color de la barra de navegación';
+    $description = 'Seleccionar el color de fondo de la barra de navegación';
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '#ddeeff');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
 
+    $name = 'theme_boostchild/secondarycolor';
+    $title = 'Color secundardio';
+    $description = 'Seleccionar el color secundario';
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '#ea7e37');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_boostchild/fontcolor';
+    $title = 'Color de la fuente';
+    $description = 'Seleccionar el color de la fuente principal';
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '#333333');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_boostchild/cardbgcolor';
+    $title = 'Color fondo de la carta';
+    $description = 'Seleccionar el color de fondo de la carta';
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '#ebf6ff');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
 
     $settings->add($page);
 

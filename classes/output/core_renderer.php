@@ -16,6 +16,7 @@
 
 namespace theme_boostchild\output;
 
+use image_icon;
 use moodle_url;
 
 defined('MOODLE_INTERNAL') || die;

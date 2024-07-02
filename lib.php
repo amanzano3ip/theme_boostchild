@@ -102,7 +102,6 @@ function theme_boostchild_pluginfile($course, $cm, $context, $filearea, $args, $
  * @throws dml_exception
  */
 function theme_boostchild_get_main_scss_content($theme) {
-
     global $CFG;
 
     $scss = '';
@@ -136,11 +135,14 @@ function theme_boostchild_get_main_scss_content($theme) {
  */
 function theme_boostchild_get_pre_scss($theme) {
     global $CFG;
-
     $scss = '';
     $configurable = [
         // Config key => [variableName, ...].
-            'primarycolor' => ['primarycolor'],
+            'primarycolor' => [ 'primarycolor' ],
+            'navbarcolor' => [ 'navbarcolor' ],
+            'secondarycolor' => [ 'secondarycolor' ],
+            'fontcolor' => [ 'fontcolor' ],
+            'cardbgcolor' => [ 'cardbgcolor' ],
     ];
 
     // Prepend variables first.
