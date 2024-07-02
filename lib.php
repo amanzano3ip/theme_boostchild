@@ -140,17 +140,7 @@ function theme_boostchild_get_pre_scss($theme) {
     $scss = '';
     $configurable = [
         // Config key => [variableName, ...].
-            'brandcolor' => ['primary'],
-            'navbarbgcolor' => ['navbarbgcolor'],
-            'navbarcolor' => ['navbarcolor'],
-            'backboard' => ['backboard'],
-            'secondarycolor' => ['secondarycolor'],
-            'scrollcolor' => ['scrollcolor'],
-            'drawerleftbgcolor' => ['drawerleftbgcolor'],
-            'drawerleftcolor' => ['drawerleftcolor'],
-            'drawerrightbgcolor' => ['drawerrightbgcolor'],
-            'drawerrightcolor' => ['drawerrightcolor'],
-            'cardheaderbgcolor' => ['cardheaderbgcolor'],
+            'primarycolor' => ['primarycolor'],
     ];
 
     // Prepend variables first.

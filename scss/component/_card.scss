@@ -6,7 +6,7 @@ body.theme_boostchild {
         flex-direction: column;
         min-width: 0;
         word-wrap: break-word;
-        background-color: #dbdbdb;
+        background-color: $cardbgcolor;
         background-clip: border-box;
         border: 2px dotted rgba(0, 0, 0, .125);
         border-radius: .5rem;

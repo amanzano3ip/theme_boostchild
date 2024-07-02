@@ -18,18 +18,5 @@ body.theme_boostchild {
 
     }
 
-
-    &.is_admin {
-
-        .btn {
-            &.btn-primary {
-                color: #fff;
-                background-color: $secondarycolor;
-                border-color: $secondarycolor;
-            }
-        }
-
-    }
-
 }
 
