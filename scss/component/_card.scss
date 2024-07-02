@@ -1,0 +1,16 @@
+body.theme_boostchild {
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #dbdbdb;
+        background-clip: border-box;
+        border: 2px dotted rgba(0, 0, 0, .125);
+        border-radius: .5rem;
+    }
+
+}
+

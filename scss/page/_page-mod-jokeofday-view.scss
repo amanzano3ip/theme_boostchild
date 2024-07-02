@@ -1,0 +1,29 @@
+body.theme_boostchild {
+
+
+    &#page-mod-jokeofday-view {
+
+        .title {
+
+            &::before {
+                display: inline-block;
+                margin-left: inherit;
+                vertical-align: inherit;
+                content: "";
+                width: 40px;
+                height: 26px;
+                background-size: 28px;
+                color: #000;
+                position: relative;
+                background: url('[[pix:theme|calendar]]') no-repeat;
+                border: none;
+                top: 5px;
+                margin-right: -5px;
+            }
+
+        }
+    }
+
+
+
+}

@@ -1,0 +1,35 @@
+body.theme_boostchild {
+
+    .btn {
+
+        border-radius: 4px;
+
+        &.btn-primary {
+            color: #fff;
+            background-color: $primarycolor;
+            border-color: $primarycolor;
+        }
+
+        &.btn-secondary {
+            color: #fff;
+            background-color: $secondarycolor;
+            border-color: $secondarycolor;
+        }
+
+    }
+
+
+    &.is_admin {
+
+        .btn {
+            &.btn-primary {
+                color: #fff;
+                background-color: $secondarycolor;
+                border-color: $secondarycolor;
+            }
+        }
+
+    }
+
+}
+

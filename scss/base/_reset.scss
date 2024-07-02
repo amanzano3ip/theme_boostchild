@@ -1,0 +1,14 @@
+body.theme_boostchild {
+
+    font-family: $font;
+    color: $fontcolor;
+
+    &.extendscontent {
+        div#topofscroll {
+            max-width: 100% !important;
+        }
+    }
+
+
+
+}
